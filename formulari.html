@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<h2>Formulario de registro de usuarios y preferencias</h2>
+
+<form action="#" method="post">
+<fieldset>
+    <legend><strong>Datos personales</strong></legend>
+    <label for="fname">Nombre y apellidos</label>
+    <input type="text" id="fname" name="fname" required><br></br>
+    <label for="email">email</label>
+    <input type="email" id="email" name="email"required> <br></br>
+    <label for="password">Contraseña</label>
+    <input type="password" id="password" name="password" minlength="8" required> <br></br>
+    <label for="fnacimiento">Fecha de nacimiento</label>
+    <input type="date" id="fnacimiento" name="fnacimiento" min="1900-01-01" max="2026-12-30"><br></br>
+    <label for="edad">Edad</label>
+    <input type="number" id="edad" name="edad" min="16" max="99">
+</fieldset>
+<fieldset>
+
+    <legend><strong>Academicos y preferencias</strong></legend>
+    <p><strong>Cual es tu horario escolar</strong></p>
+  <input type="radio" id="mañana" name="horario" value="mañana">
+  <label for="mañana">Mañana</label>
+  <input type="radio" id="tarde" name="horario" value="tarde">
+  <label for="tarde">Tarde</label><br>
+
+  <h3>Modulos matriculados</h3>
+
+  <input type="checkbox" id="marcas" name="marcas" value="marcas">
+  <label for="marcas"> Lenguaje de marcas</label><br>
+  <input type="checkbox" id="programacion" name="programacion" value="programacion">
+  <label for="programacion"> Programacion</label><br>
+  <input type="checkbox" id="base-de-datos" name="datos" value="datos">
+  <label for="base de datos"> Base de datos</label><br><br>
+
+<label for="experiencia"> Elige tu nivel de experiencia previa:</label>
+
+<select name="experiencia" id="experiencia">
+  <option value="no exp">Sin experiencia</option>
+  <option value="basico">Basico</option>
+  <option value="medio">Intermedio</option>
+  <option value="avanzado">Avanzado</option>
+</select>
+
+<br></br>
+</fieldset>
+
+<fieldset>
+  <legend><strong>Observaciones y terminos</strong></legend>
+<label for="coment">Comentarios/Biografia:</label><br></br>
+
+<textarea id="coment" name="coment" rows="4" cols="40" placeholder="Dinos sobre ti o algun comentario">
+</textarea><br>
+
+<input type="checkbox" id="terminos" name="terminos" value="termino" required>
+  <label for="terminos"> Aceptas los terminos?</label><br>
+
+
+  <input type="submit" value="Submit"><br><br>
+  <input type="reset" value="Reset">
+
+</fieldset>
+
+</form>
